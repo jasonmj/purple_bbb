@@ -2,7 +2,7 @@ defmodule NervesSystemBbb.MixProject do
   use Mix.Project
 
   @github_organization "nerves-project"
-  @app :nerves_system_bbb
+  @app :purple_bbb
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
@@ -42,7 +42,7 @@ defmodule NervesSystemBbb.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "#{@github_organization}/#{@app}"}
+        # {:github_releases, "#{@github_organization}/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
